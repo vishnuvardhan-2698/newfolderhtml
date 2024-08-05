@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login22222.html" method="post">
+     
+        <!--  Username Validation -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="e.g. user_name123"
+               pattern="^[a-zA-Z0-9._]{3,16}$"
+               title="Username must be 3-16 characters long and can only contain letters, numbers, underscores, and dots." required><br>
+
+            
+                <!--  Email Validation -->
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="e.g. user@example.com"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                       title="Please enter a valid email address." required><br>
+        
+                
+                       
+                        <!-- Indian Phone Number with +91 Input -->
+                        <label for="phone">Indian Phone Number (+91):</label>
+                        <input type="text" id="phone" name="phone" placeholder="+91 9876543210"
+                               pattern="^\+91\s[6-9]\d{9}$"
+                               title="Please enter a valid Indian phone number in the format +91 9876543210." required><br>
+                
+                      <input type="submit" value="Submit">
+                    
+    </form>
+</body>
+</html>
